@@ -664,6 +664,46 @@
       <span class="case-arrow">↗</span>
     </div>
 
+    <div class="case-card" onclick="openModal('hp-cpq')">
+      <div class="case-client">
+        <div class="client-dot dot-hp">HP</div>
+        <span class="client-name">HP Inc.</span>
+      </div>
+      <h3 class="case-title">Self-Serve CPQ & Subscription Platform</h3>
+      <p class="case-desc">Defined platform strategy to shift HP Inc.'s $1B+ managed services business from high-touch sales to self-serve — migrating 80% of order volume to digital via cloud-native CPQ and subscriptions.</p>
+      <div class="case-metrics">
+        <span class="metric-pill">80% orders self-serve</span>
+        <span class="metric-pill blue">$1B+ platform</span>
+      </div>
+      <div class="case-tags">
+        <span class="case-tag">CPQ</span>
+        <span class="case-tag">Subscriptions</span>
+        <span class="case-tag">Platform Strategy</span>
+        <span class="case-tag">B2B</span>
+      </div>
+      <span class="case-arrow">↗</span>
+    </div>
+
+    <div class="case-card" onclick="openModal('chevron-punchout')">
+      <div class="case-client">
+        <div class="client-dot dot-chevron">CVX</div>
+        <span class="client-name">Chevron</span>
+      </div>
+      <h3 class="case-title">B2B Punchout & Order Management</h3>
+      <p class="case-desc">Identified order leakage as a critical technical risk and partnered with engineering to prioritize and deliver scalable punchout integrations — eliminating revenue loss across a complex multi-platform environment.</p>
+      <div class="case-metrics">
+        <span class="metric-pill">Order leakage eliminated</span>
+        <span class="metric-pill blue">Oracle · Ariba · Coupa</span>
+      </div>
+      <div class="case-tags">
+        <span class="case-tag">B2B Commerce</span>
+        <span class="case-tag">Punchout</span>
+        <span class="case-tag">Risk Mgmt</span>
+        <span class="case-tag">ERP Integration</span>
+      </div>
+      <span class="case-arrow">↗</span>
+    </div>
+   
   </div>
 </section>
 
@@ -856,6 +896,30 @@ const cases = {
       'Expanded financial inclusion for areas without nearby branch access',
     ],
     metrics: ['Branch vs Online Account Opens', 'Customer Acquisition Rate', 'Call Volume for Enrollment Queries']
+  },
+ 'hp-cpq': {
+    client: 'Large Laptop Manufacturer', tag: 'CPQ · Subscriptions · Platform Strategy · B2B',
+    title: 'Self-Serve CPQ & Subscription Platform',
+    problem: 'Client\'s $1B+ managed services business relied on high-touch, sales-rep-driven order processes for CPQ and subscriptions. This created friction, limited scale, and left significant digital revenue on the table.',
+    solution: 'Defined platform strategy to shift client from high-touch sales to self-serve digital — setting OKRs, sequencing the roadmap, and delivering cloud-native CPQ and subscription platforms. Owned $20M program budget and led a 100+ member global org across US, Europe, and India to execute technical delivery at scale.',
+    impact: [
+      '80% of order volume migrated to self-serve digital experiences',
+      'Unlocked new digital revenue channels via cloud-native CPQ and subscriptions',
+      'Established scalable platform architecture supporting $1B+ managed services business'
+    ],
+    metrics: ['Self-Serve Order Volume %', 'Digital Revenue Contribution', 'Time to Quote', 'Order Fulfillment Rate', 'Platform Uptime']
+  },
+  'chevron-punchout': {
+    client: 'Energy Giant', tag: 'B2B Commerce · Punchout · ERP Integration · Risk Management',
+    title: 'B2B Punchout & Order Management',
+    problem: 'Client was experiencing order leakage — a critical technical and revenue risk caused by broken integrations between their procurement systems and supplier commerce platforms. Existing punchout connections with Oracle, Ariba, and Coupa were unreliable, causing failed orders and lost visibility.',
+    solution: 'Identified order leakage as a critical program risk through technical discovery and data analysis. Partnered closely with engineering to scope, prioritize, and deliver scalable punchout integrations across Oracle, Ariba, and Coupa — resolving cross-team ownership ambiguity and managing cross-regional dependencies throughout delivery.',
+    impact: [
+      'Order leakage eliminated across Oracle, Ariba, and Coupa procurement channels',
+      'Improved order accuracy and automation end-to-end across a complex multi-platform environment',
+      'Established end-to-end order visibility for procurement and operations teams'
+    ],
+    metrics: ['Order Accuracy Rate', 'Punchout Success Rate', 'Order Automation %', 'End-to-End Order Visibility', 'Integration Error Rate']
   }
 };
 
